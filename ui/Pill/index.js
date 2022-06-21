@@ -35,7 +35,6 @@ export class Pill extends LitElement {
         .pill {
             display: flex; 
             padding: 0.25rem 0.5rem;
-            transition-duration: 300ms; 
             font-weight: 700; 
             align-items: center; 
             user-select: none; 
@@ -46,9 +45,10 @@ export class Pill extends LitElement {
             width: fit-content;
             text-transform: uppercase;
             letter-spacing: 0.05rem;
-          }
-
-          :hover {
+        }
+        
+        :hover {
+            transition: 500ms ease-in-out; 
             color: rgba(var(--amethyst-500), .2);
           }
             
